@@ -216,15 +216,25 @@ label{
   }
 
   .par {
-    font-size: 14px;
+       position: relative;
+    top: 0;
+    
+    display: inline-block;
+    margin-top: 5px;
+    padding: 4px 8px;
   }
 
   .price {
-    font-size: 16px;
+        position: relative;
+    display: block;
+    margin-top: 10px; /* отступ вниз */
+   
+    bottom: 0;
   }
 
   .selected .price {
     font-size: 20px;
+    margin-top: 12px;
   }
 
   .selected .par {
