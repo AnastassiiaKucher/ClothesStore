@@ -103,6 +103,7 @@ h4{
 label{
     font-family: 'Varela Round', sans-serif;
     font-size:30px ;   
+    padding-bottom: 50px;
 }
 .one {
     background-image: url('https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -150,33 +151,6 @@ label{
         
         }
 
-    
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
 .christmas{
     background-color: rgba(251, 248, 249, 0.82); 
     height: 300px;
@@ -211,51 +185,70 @@ label{
 
 
 
-
-@media all and (max-width: 800px){
-    h1{
-        font-size: 40px;
-    }
-}
-
-
-
-     
-@media all and (max-width: 500px){
-    .container{
+@media all and (max-width: 600px) {
+  .container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    }
-
-    h4{
-        font-size: 15px;
-    }
-
-    h3, h1{
-        font-size: 20px;
-    }
-   
-
-    label{
-        font-size: 15px;
-    }
-    .price{
-        font-size: 10px;
-    }
-  .selected .price{
-    font-size: 20px;
+    align-items: center; /* центрируем карточки */
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
-  .selected .par{
-    font-size: 15px;
+
+  .item {
+    width: 90vw;               /* карточка на 90% ширины экрана */
+    height: auto;
+    aspect-ratio: 16 / 9;      /* сохраняем соотношение сторон */
+    margin: 10px 0;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  h1, h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .par {
+       position: relative;
+    top: 0;
     
-}
-  .christmas{
-    height: 300px;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 4px 8px;
+  }
+
+  .price {
+        position: relative;
+    display: block;
+    margin-top: 10px; /* отступ вниз */
+   
+    bottom: 0;
+  }
+
+  .selected .price {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+
+  .selected .par {
+    font-size: 15px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .christmas {
+    height: auto;
     width: 150px;
-    margin-left: 8px;
-}
-  .container{
-        flex-wrap: wrap;
-    }
+    margin: 8px auto;
+  }
 }

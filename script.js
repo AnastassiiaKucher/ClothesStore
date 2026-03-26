@@ -1,5 +1,5 @@
 function christmasCountdown(){
-    const ChristmasDate = new Date ("November 10, 2025 00:00 ");
+    const ChristmasDate = new Date ("September 10, 2026 00:00 ");
     const now = new Date ();
     const diff = ChristmasDate - now;
     const  msInSecond = 1000; // сколько миллисекунд в секунде
